@@ -25,7 +25,7 @@ class JDBC {
 
             while (resultSet.next()) {
                 int bookId = resultSet.getInt("book_id");
-                String title = resultSet.getString("title");
+                 String title = resultSet.getString("title");
                 String author = resultSet.getString("author");
                 double publication_year = resultSet.getDouble("publication_year");
 

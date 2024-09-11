@@ -1,5 +1,6 @@
 package sort;
 
+import java.io.File;
 import java.lang.reflect.Array;
 import java.util.*;
 
@@ -45,15 +46,33 @@ class Main {
 
 //        System.out.println(-1<<1);
 
-        System.out.println("hello");
-        for(int i=0;i<5;i++)
-            System.out.println("Akshat");
+//        System.out.println("hello");
+//        for(int i=0;i<5;i++)
+//            System.out.println("Akshat");
 
 //        System.out.println(Arrays.toString(ob));
 //        System.out.println(((String)ob[1]).length());
 //
 //        Object q = "qwe";
 //        System.out.println(((String)q).length());
+
+
+//        ArrayList obj = new ArrayList<>();
+//        obj.add("A");
+//        obj.add("D");
+//        obj.ensureCapacity(3);
+//        obj.trimToSize();
+//        obj.add(0,"B");
+//        obj.add("C");
+
+
+
+       
+
+
+
+
+
 
     }
 }
