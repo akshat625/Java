@@ -16,11 +16,8 @@ public class StreamDemo {
         System.out.println(even);
 
 
-
         int[] arr = {1,2,3,4,5};
-
         IntStream intStream = Arrays.stream(arr);
-
         System.out.println(intStream.sum());
 
 
