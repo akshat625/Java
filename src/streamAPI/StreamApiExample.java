@@ -36,6 +36,7 @@ public class StreamApiExample {
 
         System.out.println("Sorted Employees by Salary: " + sortedEmployees);
 
+
         // 4. Reducing: Get the total salary of all employees
         int totalSalary = employees.stream()
                 .map(Employee::getSalary)
