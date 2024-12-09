@@ -5,24 +5,26 @@ import java.util.Arrays;
 public class SecondLargest {
 
     static int secLargest(int[] arr){
-        int res=-1;
-        int largest = 0;
-        for(int i =1;i< arr.length;i++){
-            if(arr[i]>arr[largest]){
-                res=largest;
-                largest=i;
-            } else if (arr[i]!=arr[largest]) {
-                if(res==-1 || arr[i]>arr[res])
-                    res=i;
+        int max = Integer.MIN_VALUE;
+        int secMax = Integer.MIN_VALUE;
+
+        for(int num : arr){
+            if(num > max){
+                secMax = max;
+                max = num;
+            }
+            else{
+                if(num > secMax || num == max)
+                    secMax = num;
             }
         }
-        return res;
+        return secMax;
     }
 
 
     public static void main(String[] args) {
     int[] arr = {32,12,51,3,67,21};
-//        System.out.println(secLargest(arr));
-        System.out.println(Arrays.toString(arr));
+        System.out.println(secLargest(arr));
+//        System.out.println(Arrays.toString(arr));
     }
 }
